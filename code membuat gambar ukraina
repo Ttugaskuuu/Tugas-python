@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+
+# Membuat gambar
+fig, ax = plt.subplots()
+
+# Menambahkan dua persegi panjang untuk bendera
+ax.add_patch(patches.Rectangle((0, 0.5), 1, 0.5, color='blue'))  # Warna biru
+ax.add_patch(patches.Rectangle((0, 0), 1, 0.5, color='yellow'))  # Warna kuning
+
+# Mengatur batas dan menghilangkan sumbu
+ax.set_xlim(0, 1)
+ax.set_ylim(0, 1)
+ax.axis('off')
+
+# Menampilkan bendera
+plt.show()
